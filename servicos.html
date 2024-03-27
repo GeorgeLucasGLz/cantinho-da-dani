@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="services.css">
+    <link rel="icon" type="image/png" href="img/logo.png" />
+    <title>Cardápio | Cantinho da Dani</title>
+
+</head>
+
+<header>
+    <figure>
+        <figcaption>
+            <img src="img/logo.png" alt="logo-cabecalho" id="logo-header">
+        </figcaption>
+    </figure>
+
+    <div id="links">
+        <a href="index.html">Home</a>
+        <a href="#">Cardápio</a>
+        <a href="javascript:clickButtonHeader()">Fale Conosco</a>
+
+    </div>
+</header>
+
+<body>
+    <div class="mascara"></div>
+
+
+    <main>
+
+        <div class="section">
+
+            <ul class="list-services">
+
+                <li class="card-list">
+                    <div class="image-side">
+                        <h1 class="title-card"> Bolo de Milho</h1>
+                        <img src="img/boloMilho.jpg" class="img-list">
+                    </div>
+                    <p id="p-info">
+                        Feito com milho fresco
+                        de qualidade superior. Cada fatia é uma explosão de sabor autêntico e maciez incomparável.
+                        Uma verdadeira festa de milho!
+                    </p>
+                    <p id="p-valor">Valor: R$ 20,00</p>
+
+
+                    <button class="btn-card" value="corte1" onclick="mudarImg1()">Escolher</button>
+
+                    <div class="card-logo">
+                        <img src="img/logo.png">
+                    </div>
+                </li>
+                <li class="card-list">
+                    <div class="image-side">
+                        <h1 class="title-card">Bolo de Cenoura</h1>
+                        <img src="img/boloCenoura.jpg" class="img-list">
+                    </div>
+
+
+                    <p id="p-info">Feito com cenouras selecionadas e chocolate refinado, nosso bolo une a suavidade da
+                        cenoura com a intensidade do chocolate.
+                        Uma tentação de sabor e qualidade.</p>
+                    <p id="p-valor">Valor: R$ 22,00
+                    </p>
+
+
+                    <button class="btn-card" id="btnCut2" onclick="mudarImg2()">Escolher</button>
+
+                    <div class="card-logo">
+                        <img src="img/logo.png">
+                    </div>
+
+                </li>
+                <li class="card-list">
+                    <div class="image-side">
+                        <h1 class="title-card">Bolo Mole</h1>
+                        <img src="img/boloMole.jpg" class="img-list">
+                    </div>
+
+                    <p id="p-valor">Valor: R$ 20,00</p>
+                    <p id="p-info">Feito com uma receita tradicional cuidadosamente aprimorada, 
+                        cada fatia deste bolo macio e úmido é uma festa para o paladar. 
+                        Com sua textura delicada e sabor rico, este bolo derrete na boca.</p>
+
+                    <button class="btn-card" onclick="mudarImg3()">Escolher</button>
+
+                    <div class="card-logo">
+                        <img src="img/logo.png">
+                    </div>
+                </li>
+
+                <li class="card-list">
+                    <div class="image-side">
+                        <h1 class="title-card">Bolo Fofo</h1>
+                        <img src="img/boloFofo.jpg" class="img-list">
+                    </div>
+                    <p id="p-valor">Valor: R$ 20,00</p>
+                    <p id="p-info">Experimente nosso Bolo Fofo, feito com carinho e
+                         ingredientes selecionados para uma experiência caseira inigualável.
+                          Sua textura leve e macia derrete na boca,
+                         enquanto seu aroma delicioso enche a casa de conforto e alegria.</p>
+                    <button class="btn-card" onclick="mudarImg4()">Escolher</button>
+
+                    <div class="card-logo">
+                        <img src="img/logo.png">
+                    </div>
+                </li>
+
+                <!-- <li class="card-list">
+                    <div class="image-side">
+                        <h1 class="title-card">
+                            Bolo 5
+                        </h1>
+                        <img src="img/mid-fade.jpg" class="img-list">
+                    </div>
+
+                    <p id="p-valor">Valor: R$ 18,00</p>
+                    <p id="p-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, 
+                        quos quod vitae nostrum labore iure velit, enim null</p>
+
+                    <button class="btn-card" onclick="mudarImg5()">Escolher</button>
+
+                    <div class="card-logo">
+                        <img src="img/logo.png">
+                    </div>
+                </li>
+
+                <li class="card-list">
+                    <div class="image-side">
+                        <h1 class="title-card">
+                            Bolo 6
+                        </h1>
+                        <img src="img/mid-fade.jpg" class="img-list">
+                    </div>
+
+                    <p id="p-valor">Valor: R$ 45,00</p>
+                    <p id="p-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, 
+                        quos quod vitae nostrum labore iure velit, enim null</p>
+
+                    <button class="btn-card" onclick="mudarImg5()">Escolher</button>
+
+                    <div class="card-logo">
+                        <img src="img/logo.png">
+                    </div>
+                </li> -->
+            </ul>
+        </div>
+
+
+
+
+
+        <form id="fale-conosco">
+            <input placeholder="Seu Nome" type="text" name="Nome" id="name">
+            <input placeholder="Seu celular, ex: (xx) xxxxx-xxxx" type="tel" name="Telefone" id="tel" maxlength="15"
+                onkeyup="handlePhone(event)">
+            <label>Item Escolhido</label>
+
+            <img src="" id="orderForm">
+            <input type="hidden" name="Bolo Escolhido" type="text" id="order">
+            <input type="hidden" name="ValorItem" type="text" id="price">
+            <label>Selecionar Dia</label>
+            <select name="horario" id="hourSelect">
+                <option>Selecione um Dia</option>
+                <option value="Domingo">Domingo</option>
+                <option value="Segunda-feira">Segunda-feira</option>
+                <option value="Terça-feira">Terça-feira</option>
+                <option value="Quarta-feira">Quarta-feira</option>
+                <option value="Quarta-feira">Quinta-feira</option>
+                <option value="Sexta-feira">Sexta-feira</option>
+                <option value="Sábado">Sábado</option>
+
+
+
+
+            </select>
+            <button id="btn" class="btn-orcamento" onclick="enviarForm()">Enviar Pedido</button>
+        </form>
+        <div id="mascara-formulario" onclick="desligarMascara()"></div>
+
+        <form id="fale-conosco-header">
+            <input placeholder="Seu Nome" type="text" name="Nome" id="nameContact">
+            <input placeholder="Seu celular, ex: (xx) xxxxx-xxxx" type="tel" name="Telefone" id="telContact"
+                maxlength="15" onkeyup="handlePhone(event)">
+            <textarea placeholder="Dúvidas / Pedidos" name="Dúvida"></textarea>
+            <button id="btn" class="btn-orcamento" onclick="contactHeader()">Entrar em Contato</button>
+        </form>
+        <div id="mascaraHeader" onclick="desligarMascaraHeader()"></div>
+
+
+    </main>
+    <div class="link-zap">
+        <a href="https://api.whatsapp.com/send?phone=5585992406549" target="_blank" id="lin">
+            <img src="./img/whatsapp.png" alt="whatsapp-img" id="zap-img">
+        </a>
+    </div>
+
+
+
+</body>
+<script src="./scripts.js"></script>
+
+</html>

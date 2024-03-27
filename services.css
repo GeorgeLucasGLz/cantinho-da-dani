@@ -1,0 +1,555 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+header {
+
+    display: flex;
+    position: relative;
+    top: 0;
+    align-items: center;
+    gap: 15px;
+    margin-top: 15px;
+
+}
+
+body {
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+
+}
+
+body {
+
+    background-image: url(./img/banner.jpg);
+    background-repeat: repeat;
+    background-size: 45%;
+    background-attachment: fixed;
+
+}
+
+
+
+#logo-header {
+    padding: 2px;
+    padding: 2px;
+    cursor: pointer;
+    margin: 0 0 0 35px;
+    width: 100px;
+
+
+}
+
+#logo-header:hover {
+    width: 105px;
+    transition: 0.4s ease-in-out;
+}
+
+a {
+    color: white !important;
+    margin-right: 15px;
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    font-family: 'Poppins', Helvetica, sans-serif;
+    font-weight: bold;
+
+}
+
+header a:hover {
+    color: rgb(245, 111, 250) !important;
+    font-size: 19px;
+    transition: 0.4s ease-in-out;
+}
+
+#links {
+    text-shadow: 2px 2px 15px;
+}
+
+/*CONTEÚDO*/
+
+.mascara {
+
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.9;
+
+
+}
+
+
+.img-list {
+
+    width: 350px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.list-services {
+
+    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
+    width: 450px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 70px;
+
+
+}
+
+.title-card{
+
+    margin-top: 7px;
+
+}
+
+.card-list {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(10, 10, 10, 0.3), rgba(18, 18, 18, 0.3), rgba(24, 24, 24, 0.3), rgba(29, 29, 29, 0.3));
+    border-radius: 10px;
+    padding: 10px;
+    padding-bottom: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background-image: radial-gradient(circle, rgb(243, 115, 249, 0.3), rgb(237, 98, 250, 0.3), rgb(230, 80, 250, 0.3), rgb(222, 60, 252, 0.3), rgb(213, 32, 253, 0.3));
+    border: 2px solid rgb(245, 111, 250);
+    box-shadow: 0 0 10px rgb(245, 111, 250);
+
+}
+
+.image-side {
+    
+    text-shadow: 2px 2px 7px black;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+
+
+#p-info {
+    /* display: none; */
+   
+    font-size: 18px;
+    max-width: 100%;
+    height: 30%;
+    text-align: center;
+    margin-top: 7%;
+    font-weight: bold;
+    text-shadow: 2px 2px 3px black;
+    
+    margin-bottom: 0;
+
+}
+
+#p-valor{
+    
+    font-size: 25px;
+    margin-top: 10px;
+    font-weight: bold;
+    text-shadow: 2px 2px 3px black;
+    line-height: 125%;
+}
+
+.btn-card {
+    font-family: 'Poppins', sans-serif;
+    margin-top: 20px;
+    background-color: white;
+    color: rgb(197, 77, 252);
+    width: 200px;
+    height: 80px;
+    border: none;
+    border-radius: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 0 0 7px rgb(245, 111, 250);
+    border: 3px solid rgb(245, 111, 250);
+
+}
+
+.btn-card:hover {
+    transform: scale(1.05);
+    background-color: rgb(245, 111, 250);
+    text-shadow: 3px 3px 10px white;
+    transition: 0.4s ease-in-out;
+
+
+}
+
+
+.card-logo {
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    position: relative;
+    top: 50px;
+    right: 5px;
+}
+
+.card-logo img {
+    width: 100px;
+
+}
+
+
+
+
+
+
+
+
+
+/*FORMULÁRIO*/
+
+#btn {
+    font-family: 'Poppins', sans-serif;
+    margin-top: 20px;
+    background-color: white;
+    color: black;
+    border: 3px solid rgb(245, 111, 250);
+    box-shadow: 0px 0px 7px rgb(245, 111, 250);
+    width: 200px;
+    height: 50px;
+    border-radius: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+#btn:hover {
+    background-color: rgb(245, 111, 250);
+    transition: 0.4s ease-in-out;
+    width: 205px;
+    height: 55px;
+}
+
+
+
+.link-zap {
+
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+#zap-img {
+    width: 50px;
+
+}
+
+#zap-img:hover {
+    transition: 0.4s ease-in-out;
+    width: 53px;
+
+}
+
+#fale-conosco {
+    z-index: 1;
+    top: 3%;
+    left: -340px;
+    background-color: rgb(34, 34, 34);
+    position: fixed;
+    gap: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    justify-content: end;
+    width: 350px;
+}
+
+#fale-conosco-header {
+    z-index: 1;
+    top: 20%;
+    left: -340px;
+    background-color: rgb(34, 34, 34);
+    position: fixed;
+    gap: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    justify-content: end;
+    width: 350px;
+}
+
+#mascara-formulario {
+    visibility: hidden;
+    z-index: 0;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    position: fixed;
+    top: 0;
+    min-width: 100%;
+    min-height: 100%;
+    left: 0;
+
+}
+
+#mascaraHeader {
+    visibility: hidden;
+    z-index: 0;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    position: fixed;
+    top: 0;
+    min-width: 100%;
+    min-height: 100%;
+    left: 0;
+
+
+}
+
+
+input {
+    color: #fff;
+    padding: 7px;
+    height: 40px;
+    border-radius: 5px;
+    border: 2px solid rgb(245, 111, 250);
+    outline-color: rgb(245, 111, 250);
+    background-color: rgb(53, 53, 53);
+}
+
+label {
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+}
+
+#orderForm {
+    display: flex;
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    border: 2px solid rgb(245, 111, 250);
+    outline-color: rgb(245, 111, 250);
+
+}
+
+select {
+    color: white;
+    border: 2px solid rgb(245, 111, 250);
+    outline-color: rgb(245, 111, 250);
+    background-color: rgb(53, 53, 53);
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+
+/* #corte1 {
+    background-color: palegreen;
+} */
+
+textarea {
+
+    color: #fff;
+    outline-color: rgb(245, 111, 250);
+    width: 100%;
+    height: 200px;
+    padding: 7px;
+    border-radius: 7px;
+    border: 2px solid rgb(245, 111, 250);
+    resize: none;
+    background-color: rgb(53, 53, 53);
+}
+
+@media screen and (max-width: 1100px) {
+    body {
+        background-size: 120%;
+    }
+
+    #logo-header {
+        display: none;
+    }
+
+    .list-services {
+        width: 450px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    header {
+       
+        
+        margin: 0;
+        position: static;
+        top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+
+    header a {
+        font-size: 25px;
+        
+    }
+
+    header a:hover {
+        color: rgb(245, 111, 250) !important;
+        font-size: 19px;
+        transition: 0.4s ease-in-out;
+    }
+
+    .card-logo img {
+
+        width: 120px;
+    }
+
+
+}
+
+@media (width < 900px) {
+    .img-list {
+        width: 350px;
+        height: 300px;
+        border-radius: 10px;
+    }
+
+    .list-services {
+        width: 450px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+    .info-card {
+        font-size: 15px;
+        margin-top: 50px;
+    }
+
+    #fale-conosco {
+        top: 10%;
+    }
+
+}
+
+@media (width < 780px) {
+    header a {
+        font-size: 20px;
+    }
+
+    .card-logo {
+
+        right: 0;
+    }
+
+    .list-services {
+        width: 400px;
+    }
+
+    .card-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-list h1 {
+        text-align: center;
+    }
+
+    .img-list {
+        width: 330px;
+        height: 280px;
+        border-radius: 10px;
+    }
+
+    .info-card {
+
+        margin-top: 20px;
+    }
+
+
+}
+
+
+
+
+@media (width < 470px) {
+    .img-list {
+        width: 280px;
+        height: 230px;
+        border-radius: 10px;
+    }
+
+    .list-services {
+
+        width: 300px;
+
+    }
+
+
+    .info-card {
+        font-size: 15px;
+        margin-top: 50px;
+    }
+
+}
+
+@media (width < 450px) {
+
+    header a {
+        font-size: 13px;
+    }
+
+    #fale-conosco {
+
+        width: 300px;
+    }
+
+    input {
+        padding: 7px;
+        height: 40px;
+        border-radius: 5px;
+        border: 2px solid rgb(245, 111, 250);
+        outline-color: rgb(245, 111, 250);
+        background-color: rgb(53, 53, 53);
+    }
+
+    textarea {
+
+        color: #fff;
+        border: 2px solid rgb(245, 111, 250);
+        outline-color: rgb(245, 111, 250);
+        width: 100%;
+        height: 200px;
+        padding: 7px;
+        border-radius: 7px;
+        resize: none;
+        background-color: rgb(53, 53, 53);
+    }
+
+    #fale-conosco {
+        top: 5%;
+    }
+}
+
+@media (width < 350px) {
+    header a {
+        font-size: 13px;
+    }
+}
